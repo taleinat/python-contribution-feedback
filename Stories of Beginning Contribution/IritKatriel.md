@@ -1,3 +1,8 @@
+* Author: Irit Katriel
+* Date: Oct. 18th, 2020
+* Posted on: [GitHub PR](https://github.com/taleinat/python-contribution-feedback/pull/1)
+
+---
 
 My first checkout of the cpython codebase was in order to debug a segfault due to a GC 
 trashcan related bug in python 3.8 (bpo-40608). Fortunately, this was caught by a unit
@@ -10,7 +15,7 @@ The issue was that new trashcan macros were introduced, but the old ones remaine
 backwards compatibility yet were no longer working correctly in all cases. The fix for
 us was to move to use the new macros, so we don't have a problem with this anymore. 
 However, I would have had a much easier time if the old macros were just removed and 
-I was forced by a complier error to use the new ones. The issue I reported is still 
+I was forced by a compiler error to use the new ones. The issue I reported is still 
 open, and people migrating to Python 3.8 might still have the problems I faced.
 
 After that initial contribution, I got a taste for working on cpython and started
@@ -32,12 +37,11 @@ friendly and accepting team. On the other hand, due to the voluntary nature of t
 it seems that different parts of the codebase enjoy very different levels of care, and
 I wonder whether it makes sense to trim down the standard library to a smaller set which
 is maintained to a higher standard (for example - should pdb be dropped or should the
-bugs in it be fixed? And if no core dev has an interest in that, how will it happen?).  
+bugs in it be fixed? And if no core dev has an interest in that, how will it happen?).
 
 Another point I was wondering about is how to get more PR reviewing going on among 
 non-core contributors. The PR backlog is a well known pain point, and I think that
 new contributors can learn a lot from getting involved in this work. I don't know
-quite how to encourage it though. 
+quite how to encourage it though.
 
 Thank you, Tal, for soliciting my input. 
-
